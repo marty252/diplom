@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @publication.title
+%p
+  %b Type:
+  = @publication.type
+%p
+  %b Organisation:
+  = @publication.organisation
+%p
+  %b Year:
+  = @publication.year
+%p
+  %b Rints:
+  = @publication.rints
+%p
+  %b Journal:
+  = @publication.journal
+
+= link_to 'Edit', edit_publication_path(@publication)
+\|
+= link_to 'Back', publications_path

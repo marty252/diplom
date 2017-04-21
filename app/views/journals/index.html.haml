@@ -1,0 +1,32 @@
+%h1 Listing journals
+
+%table
+  %thead
+    %tr
+      %th Название
+      %th Издательство
+      %th Город
+      %th Science index (место)
+      %th Science index (значение)
+      %th Двухлетний импакт-фактор
+      %th Пятилетний импакт-фактор
+      %th
+      %th
+
+  %tbody
+    - @journals.each do |journal|
+      %tr
+        %td= journal.name
+        %td= journal.publishing_house
+        %td= journal.city
+        %td= journal.SI_place
+        %td= journal.SI_value
+        %td= journal.impact_factor2
+        %td= journal.impact_factor5
+        %td= link_to 'Show', journal
+        %td= link_to 'Edit', edit_journal_path(journal)
+        %td= link_to 'Destroy', journal, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Journal', new_journal_path

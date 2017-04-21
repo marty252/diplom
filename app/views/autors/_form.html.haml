@@ -1,0 +1,28 @@
+= form_for @autor do |f|
+  - if @autor.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@autor.errors.count, "error")} prohibited this autor from being saved:"
+      %ul
+        - @autor.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :first_name
+    = f.text_area :first_name
+  .field
+    = f.label :second_name
+    = f.text_area :second_name
+  .field
+    = f.label :last_name
+    = f.text_area :last_name
+  .field
+    = f.label :spin
+    = f.number_field :spin
+  .field
+    = f.label :autor_id
+    = f.number_field :autor_id
+  .field
+    = f.label :science_index
+    = f.check_box :science_index
+  .actions
+    = f.submit 'Save'

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyText
+  type: MyText
+  organisation: MyText
+  year: 1
+  rints: MyText
+  journal: one
+
+two:
+  title: MyText
+  type: MyText
+  organisation: MyText
+  year: 1
+  rints: MyText
+  journal: two

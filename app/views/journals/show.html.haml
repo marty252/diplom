@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @journal.name
+%p
+  %b Publishing house:
+  = @journal.publishing_house
+%p
+  %b Country:
+  = @journal.country
+%p
+  %b Science index:
+  = @journal.science_index
+
+= link_to 'Edit', edit_journal_path(@journal)
+\|
+= link_to 'Back', journals_path

@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @autor.first_name
+%p
+  %b Second name:
+  = @autor.second_name
+%p
+  %b Family name:
+  = @autor.last_name
+%p
+  %b Spin:
+  = @autor.spin
+%p
+  %b Autor:
+  = @autor.autor_id
+%p
+  %b Science index:
+  = @autor.science_index
+
+= link_to 'Edit', edit_autor_path(@autor)
+\|
+= link_to 'Back', autors_path

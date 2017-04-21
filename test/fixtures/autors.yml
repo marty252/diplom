@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyText
+  second_name: MyText
+  family_name: MyText
+  spin: 1
+  autor_id: 1
+  science_index: false
+  stat_id: 1
+
+two:
+  first_name: MyText
+  second_name: MyText
+  family_name: MyText
+  spin: 1
+  autor_id: 1
+  science_index: false
+  stat_id: 1

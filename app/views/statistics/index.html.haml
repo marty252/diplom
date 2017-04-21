@@ -1,0 +1,144 @@
+%h1 Listing statistics
+
+%table
+  %thead
+    %tr
+      %th Показатель
+      %th Значение
+      %th Процент
+      - statistic = @statistics
+    %tr 
+      %td Число публикаций автора в РИНЦ 
+      %td= statistic.value0
+      %td 
+    %tr 
+      %td Число цитирований публикаций автора в РИНЦ 
+      %td= statistic.value1
+      %td 
+    %tr 
+      %td Суммарное число цитирований автора  
+      %td= statistic.value2
+      %td no
+    %tr 
+      %td Число публикаций, процитировавших работы автора
+      %td= statistic.value3
+      %td no
+    %tr 
+      %td Число ссылок на самую цитируемую публикацию 
+      %td= statistic.value4
+      %td no
+    %tr 
+      %td Число публикаций автора, процитированных хотя бы один раз  
+      %td= statistic.value5
+      %td= statistic.stat5
+    %tr 
+      %td Среднее число цитирований в расчете на одну публикацию  
+      %td= statistic.value6
+      %td no
+    %tr 
+      %td Число публикаций, входящих в ядро РИНЦ   
+      %td= statistic.value7
+      %td= statistic.stat7
+    %tr 
+      %td Число цитирований публикаций, входящих в ядро РИНЦ  
+      %td= statistic.value8
+      %td no
+    %tr 
+      %td Индекс Хирша  
+      %td= statistic.value9
+      %td no
+    %tr 
+      %td Индекс Хирша без учета самоцитирований
+      %td= statistic.value10
+      %td no
+    %tr 
+      %td Индекс Хирша с учетом только статей в журналах  
+      %td= statistic.value11
+      %td no
+    %tr 
+      %td Индекс Хирша по ядру РИНЦ 
+      %td= statistic.value12
+      %td no
+    %tr 
+      %td Индекс Хирша по всем публикациям с участием ученого
+      %td= statistic.value13
+      %td no
+    %tr 
+      %td Год первой публикации 
+      %td= statistic.value14
+      %td no
+    %tr 
+      %td Число самоцитирований 
+      %td= statistic.value15
+      %td= statistic.stat15
+    %tr 
+      %td Число цитирований соавторами
+      %td= statistic.value16
+      %td= statistic.stat16
+    %tr 
+      %td Число соавторов
+      %td= statistic.value17
+      %td no
+    %tr 
+      %td Число статей в зарубежных журналах  
+      %td= statistic.value18
+      %td= statistic.stat18
+    %tr 
+      %td Число статей в российских журналах
+      %td= statistic.value19
+      %td= statistic.stat19
+    %tr 
+      %td Число статей в российских журналах из перечня ВАК 
+      %td= statistic.value20
+      %td= statistic.stat20
+    %tr 
+      %td Число статей в российских переводных журналах 
+      %td= statistic.value21
+      %td= statistic.stat21
+    %tr 
+      %td Число статей в журналах с ненулевым импакт-фактором
+      %td= statistic.value22
+      %td= statistic.stat22
+    %tr 
+      %td Число цитирований из зарубежных журналов  
+      %td= statistic.value23
+      %td= statistic.stat23
+    %tr 
+      %td Число цитирований из российских журналов  
+      %td= statistic.value24
+      %td= statistic.stat24
+    %tr 
+      %td Число цитирований из российских журналов из перечня ВАК
+      %td= statistic.value25
+      %td= statistic.stat25
+    %tr 
+      %td Число цитирований из российских переводных журналов 
+      %td= statistic.value26
+      %td= statistic.stat26
+    %tr 
+      %td Число цитирований из журналов с ненулевым импакт-фактором 
+      %td= statistic.value27
+      %td= statistic.stat27
+    %tr 
+      %td Средневзвешенный импакт-фактор журналов, в которых были опубликованы статьи 
+      %td= statistic.value28
+      %td no
+    %tr 
+      %td Средневзвешенный импакт-фактор журналов, в которых были процитированы статьи  
+      %td= statistic.value29
+      %td no
+    %tr 
+      %td Число публикаций за последние 5 лет  
+      %td= statistic.value30
+      %td= statistic.stat30
+    %tr 
+      %td Число цитирований работ автора, опубликованных за последние 5 лет 
+      %td= statistic.value31
+      %td= statistic.stat31
+    %tr 
+      %td Число цитирований публикаций автора из всех публикаций за последние 5 лет
+      %td= statistic.value32
+      %td= statistic.stat32
+
+
+

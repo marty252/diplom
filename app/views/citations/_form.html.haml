@@ -1,0 +1,16 @@
+= form_for @citation do |f|
+  - if @citation.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@citation.errors.count, "error")} prohibited this citation from being saved:"
+      %ul
+        - @citation.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :page
+    = f.number_field :page
+  .field
+    = f.label :publication_id
+    = f.number_field :publication_id
+  .actions
+    = f.submit 'Save'

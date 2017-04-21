@@ -1,0 +1,29 @@
+%h1 Listing publications
+
+%table
+  %thead
+    %tr
+      %th Id
+      %th Название
+      %th название
+      %th Организация
+      %th Журнал
+      %th
+      %th
+      %th
+
+  %tbody
+    - @publications.each do |publication|
+      %tr
+        %td= publication.publ_id
+        %td= publication.name
+        %td= publication.ptype
+        %td= publication.organisation
+        %td= publication.journal_id
+        %td= link_to 'Show', publication
+        %td= link_to 'Edit', edit_publication_path(publication)
+        %td= link_to 'Destroy', publication, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Publication', new_publication_path

@@ -1,0 +1,23 @@
+%h1 Listing citations
+
+%table
+  %thead
+    %tr
+      %th Page
+      %th Publication
+      %th
+      %th
+      %th
+
+  %tbody
+    - @citations.each do |citation|
+      %tr
+        %td= citation.page
+        %td= citation.publication_id
+        %td= link_to 'Show', citation
+        %td= link_to 'Edit', edit_citation_path(citation)
+        %td= link_to 'Destroy', citation, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Citation', new_citation_path

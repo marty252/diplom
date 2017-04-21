@@ -1,0 +1,33 @@
+%h1 Listing autors
+
+%table
+  %thead
+    %tr
+      %th Фамилия
+      %th Имя
+      %th Отчество
+      %th SPIN
+      %th Autor_id
+      %th Science index
+      %th Статистика
+      %th 
+      %th 
+      %th 
+
+  %tbody
+    - @autors.each do |autor|
+      %tr
+        %td= autor.first_name
+        %td= autor.second_name
+        %td= autor.last_name
+        %td= autor.spin
+        %td= autor.a_id 
+        %td= autor.science_index
+        %td= link_to 'Статистика', :controller => :statistics, :action => :index, :autor_id => autor.id
+        %td= link_to 'Show', autor
+        %td= link_to 'Edit', edit_autor_path(autor)
+        %td= link_to 'Destroy', autor, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Autor', new_autor_path
