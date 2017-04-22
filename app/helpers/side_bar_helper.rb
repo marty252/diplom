@@ -4,7 +4,7 @@ module SideBarHelper
     result << {
       :name => 'Авторы',
       :icon => 'users', :class => 'long',
-      :controller => :autors, :action => :new}
+      :controller => :autors, :action => :index}
      
     result
   end
